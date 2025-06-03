@@ -13,7 +13,7 @@ section .info-wrapper .contact-info {
   align-items: center;
   background-image: 
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-    url(/img/contactimg.jpg);
+    url(img/contactimg.jpg);
   background-size: cover;
   background-position: right;
   background-blend-mode: darken;
