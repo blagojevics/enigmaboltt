@@ -1,0 +1,111 @@
+
+
+/* --------------------HERO-ABOUT-US---------------------- */
+
+.about-us-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 110px;
+}
+.about-us-wrapper .about-us-text {
+  max-width: 500px;
+  padding-top: 24px;
+}
+.about-us-wrapper .about-us-text h1 {
+  font-size: 3rem;
+  padding-bottom: 15px;
+}
+.about-us-wrapper .about-us-text p {
+  font-size: 1.25rem;
+  text-align: justify;
+  padding-bottom: 15px;
+}
+.gallery {
+  --s: 250px; /* control the size */
+  --g: 20px;  /* control the gap */
+  --f: 1.5;   /* control the scale factor */
+  
+  display: grid;
+  gap: var(--g);
+  width: calc(3*var(--s) + 2*var(--g));
+  aspect-ratio: 1;
+  grid-template-columns: repeat(3,auto);
+  margin: 0 auto;
+  padding-top: 24px;
+}
+
+.gallery > img {
+  width: 0;
+  height: 0;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  filter: grayscale(80%);
+  transition: .35s linear;
+  border-radius: 5px;
+}
+
+.gallery img:hover{
+  filter: grayscale(0);
+  width:  calc(var(--s)*var(--f));
+  height: calc(var(--s)*var(--f));
+}
+
+
+/* ~buttons~ */ 
+i {
+  padding-right: 6px;
+}
+.reference-list {
+  display: flex;
+  width: 150px;
+  height: 45px;
+  align-items: center;
+  background: linear-gradient(135deg, #F4BEA2, #E0B218);
+  padding: 0px 3px 0px 10px;
+  margin: 2px 0 2px 0px;
+  border-radius: 4px;
+  opacity: 0.7;
+  color: black;
+  font-weight:  500;
+  transform: scale(1);
+  transition: 0.5s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);;
+  border-radius: 10px;
+}
+.reference-list:hover {
+ transform: scale(1.1);
+}
+
+.identification-data {
+  display: flex;
+  width: 190px;
+  height: 45px;
+  align-items: center;
+  background: linear-gradient(135deg, #F4BEA2, #E0B218);
+  padding: 0px 3px 0px 10px;
+  margin: 2px 0 2px 0px;
+  border-radius: 4px;
+  opacity: 0.7;
+  color: black;
+  font-weight: 500;
+  transform: scale(1);
+  transition: 0.5s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);;
+  border-radius: 10px;
+}
+.identification-data:hover {
+ transform: scale(1.1);
+}
+
+
+.button-wrapper-about-us {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+

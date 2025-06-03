@@ -1,0 +1,39 @@
+section .info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+  width: 100%;
+  gap: 40px;
+  padding-top: 40px
+}
+
+section .info-wrapper .contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+    url(/img/contactimg.jpg);
+  background-size: cover;
+  background-position: right;
+  background-blend-mode: darken;
+  width: 680px;
+  height: 600px;
+  max-width: 680px;
+  padding-top: 320px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.4rem;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);;
+  border-radius: 10px;
+}
+
+
+section .info-wrapper .map-info iframe {
+  background-color: rgb(138, 146, 146);
+  width: 680px;
+  height: 600px;
+  max-width: 680px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);;
+  border-radius: 10px;
+}
