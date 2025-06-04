@@ -120,4 +120,153 @@
   padding-top: 15px;
 }
 
-/* - -------------------FOOTER ------------------*/
+@media only screen and (max-width: 480px) {
+  /* GENERAL RESETS */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body,
+  html {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .container-hero,
+  .home-leftside,
+  .home-rightside,
+  .hero-text,
+  .learnmore1-wrapper,
+  .learnmore2-wrapper,
+  .about-us-wrapper,
+  .gallery,
+  .info-wrapper,
+  footer {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 10px !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .container-hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-text h1 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .learnmore1-wrapper,
+  .learnmore2-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .learnmore1 img,
+  .learnmore2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+
+  .learnmore1:hover,
+  .learnmore2:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+
+  .about-us-wrapper h1 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  .info-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .contact-info,
+  .map-info {
+    width: 100%;
+  }
+
+  .map-info iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+  }
+
+  footer {
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+
+  footer button {
+    padding: 6px 10px;
+    font-size: 0.7rem;
+  }
+
+  nav,
+  .nav-wrapper,
+  .nav-logo,
+  .nav-links {
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+    padding: 5px !important;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+    padding: 5px;
+  }
+
+  .reference-list,
+  .identification-data {
+    justify-content: center;
+    text-align: center;
+  }
+
+  h2:contains("Single Unit"),
+  h2:contains("Double Unit") {
+    display: none;
+  }
+
+  footer a {
+    display: flex;
+    
+    font-size: 0.8rem;
+    padding: 8px 12px;
+    width: 100%;
+    max-width: 100px;
+    height: 100%;
+    margin: 5px auto;
+    box-sizing: border-box;
+  }
+}
