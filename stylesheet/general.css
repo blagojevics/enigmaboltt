@@ -324,5 +324,66 @@ i {
     flex-direction: column;
     gap: 10px;
     align-items: center;
+
+    /* ANOTHER ADD */ 
+    @media (max-width: 600px) {
+  body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .container-hero,
+  .container-buildings-wrapper,
+  .about-us-wrapper,
+  .gallery,
+  .info-wrapper,
+  .contact-form,
+  footer {
+    margin: 0 !important;
+    padding: 0 10px;
+  }
+
+  h2:contains("Single Unit"),
+  h2:contains("Double Unit") {
+    display: none;
+  }
+
+  .building-single,
+  .building-double {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .building-single img,
+  .building-double img {
+    width: 100%;
+    height: auto;
+  }
+
+  .home-leftside {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .map-info iframe {
+    height: 250px !important;
+  }
+
+  .contact-info {
+    font-size: 0.9rem;
+  }
+
+  .learnmore1-wrapper,
+  .learnmore2-wrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .gallery img {
+    transition: none !important;
+    transform: none !important;
+  }
+}
   }
 }
