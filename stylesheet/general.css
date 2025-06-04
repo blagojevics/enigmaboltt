@@ -240,3 +240,89 @@ i {
     padding: 10px;
   }
 }
+
+@media (max-width: 768px) {
+  .container-hero .home-leftside .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .container-hero .home-leftside .hero-text p,
+  .container-hero .home-rightside .learnmore1-text p,
+  .container-hero .home-rightside .learnmore2-text p {
+    font-size: 1rem;
+  }
+
+  .container-buildings-wrapper .containers-section h2,
+  .container-buildings-wrapper .buildings-section h2 {
+    font-size: 2rem;
+  }
+
+  .about-us-wrapper .about-us-text h1 {
+    font-size: 2rem;
+  }
+
+  .gallery > img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  /* General containers and sections */
+  .container-hero,
+  .container-buildings-wrapper,
+  .about-us-wrapper,
+  .info-wrapper,
+  .gallery,
+  .reference-list,
+  .identification-data {
+    flex-direction: column !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 10px !important;
+    margin: 0 auto !important;
+    box-sizing: border-box;
+  }
+
+  /* Images and media */
+  img,
+  iframe {
+    max-width: 90% !important;
+    height: auto !important;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* Remove image hover effects */
+  img:hover {
+    transform: none !important;
+    filter: none !important;
+  }
+
+  /* Resize headings and text */
+  h1 {
+    font-size: 1.6rem !important;
+  }
+
+  h2 {
+    font-size: 1.3rem !important;
+  }
+
+  p, li, a {
+    font-size: 1rem !important;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+  }
+
+  .button-wrapper-about-us {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+}
