@@ -151,5 +151,136 @@ section .container-buildings-wrapper .buildings-section h3 {
   object-fit: cover;
   width: 280px;
   height: 438.767px;
-  
 }
+
+@media screen and (max-width: 480px) {
+  /* Reset base layout */
+  * {
+    box-sizing: border-box;
+  }
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .nav-container,
+  .container-hero,
+  .footer,
+  .about-us-wrapper,
+  .container-buildings-wrapper,
+  .gallery,
+  section,
+  .contact-section,
+  .footer-container {
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  /* Navigation adjustments */
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 8px 0;
+  }
+
+  /* Headings */
+  h1, h2, h3 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  /* Remove double/single H2 if needed */
+  h2:contains("Single Unit"),
+  h2:contains("Double Unit") {
+    display: none;
+  }
+
+  /* Stacking building blocks */
+  .container-buildings-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    }
+
+  .containers-section,
+  .buildings-section {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    }
+
+  .containers-section img,
+  .buildings-section img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    }
+
+  /* Footer buttons and layout */
+  .footer {
+    padding: 10px;
+    }
+
+  .footer .footetr-button-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    font-size: 0.4rem;
+    }
+
+    footer {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 10px !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    }
+
+
+  .footer p {
+    text-align: center;
+  }
+
+    footer a {
+    display: flex;
+    
+    font-size: 0.8rem;
+    padding: 8px 12px;
+    width: 100%;
+    max-width: 100px;
+    height: 100%;
+    margin: 5px auto;
+    box-sizing: border-box;
+  }
+
+  /* Contact form scaling if present */
+  .contact-section form,
+  .contact-section input,
+  .contact-section textarea,
+  .contact-section button {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Gallery image fixes */
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+
