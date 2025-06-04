@@ -1,11 +1,9 @@
-
-
 /* --------------------HERO-ABOUT-US---------------------- */
 
 .about-us-wrapper {
   display: flex;
   justify-content: space-between;
-  gap: 110px;
+  gap: 50px;
 }
 .about-us-wrapper .about-us-text {
   max-width: 500px;
@@ -30,7 +28,7 @@
   width: calc(3*var(--s) + 2*var(--g));
   aspect-ratio: 1;
   grid-template-columns: repeat(3,auto);
-  margin: 0 auto;
+  margin: auto;
   padding-top: 24px;
 }
 
@@ -107,5 +105,94 @@ i {
   justify-content: space-around;
 }
 
+@media (max-width: 420px) {
+  .about-us-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 420px;
+  }
+
+  .about-us-wrapper .about-us-text {
+    max-width: 90%;
+    padding-top: 16px;
+    text-align: center;
+  }
+
+  .about-us-wrapper .about-us-text h1 {
+    font-size: 2rem;
+  }
+
+  .about-us-wrapper .about-us-text p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .gallery {
+    display: none;
+  }
+
+  .button-wrapper-about-us {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .reference-list,
+  .identification-data {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Navigation adjustments */
+  nav {
+    flex-direction: column;
+    align-items: center;
+    max-width: 480px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 8px 0;
+  }
+
+  /* Footer buttons and layout */
+  .footer {
+    padding: 10px;
+    }
+
+  .footer .footetr-button-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    font-size: 0.4rem;
+    }
+
+    footer {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 10px !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    }
 
 
+  .footer p {
+    text-align: center;
+  }
+
+    footer a {
+    display: flex;
+    
+    font-size: 0.8rem;
+    padding: 8px 12px;
+    width: 100%;
+    max-width: 100px;
+    height: 100%;
+    margin: 5px auto;
+    box-sizing: border-box;
+  }
+}
